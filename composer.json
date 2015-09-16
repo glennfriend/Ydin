@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./local/ydin-ydin"
+        }
+    ],
+    "require" : {
+        "ydin/ydin": "*"
+    }
+}

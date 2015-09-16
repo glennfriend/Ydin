@@ -1,0 +1,20 @@
+{
+    "version":      "1.0.0",
+    "name":         "ydin/ydin",
+    "description":  "ydin library",
+    "type":         "library",
+    "keywords":     [],
+    "require": {
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ydin\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.0"
+        }
+    }
+}
