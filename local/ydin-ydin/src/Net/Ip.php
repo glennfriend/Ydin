@@ -4,10 +4,10 @@
  *
  *  @version    1.0.1
  *  @category   Ydin
- *  @package    Ydin\Ip
+ *  @package    Ydin\Net
  *  @uses
  */
-namespace Ydin;
+namespace Ydin\Net;
 
 class Ip
 {

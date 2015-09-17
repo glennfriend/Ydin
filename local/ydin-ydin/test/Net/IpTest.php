@@ -7,15 +7,15 @@ class IpTest extends PHPUnit_Framework_TestCase
      */
     public function test_isPrivate()
     {
-        $this->assertEquals( true, Ydin\Ip::isPrivate('127.0.0.1')   );
-        $this->assertEquals( true, Ydin\Ip::isPrivate('10.0.0.0')    );
-        $this->assertEquals( true, Ydin\Ip::isPrivate('172.16.0.0')  );
-        $this->assertEquals( true, Ydin\Ip::isPrivate('192.168.0.0') );
+        $this->assertEquals( true, Ydin\Net\Ip::isPrivate('127.0.0.1')   );
+        $this->assertEquals( true, Ydin\Net\Ip::isPrivate('10.0.0.0')    );
+        $this->assertEquals( true, Ydin\Net\Ip::isPrivate('172.16.0.0')  );
+        $this->assertEquals( true, Ydin\Net\Ip::isPrivate('192.168.0.0') );
         
-        $this->assertEquals( false, Ydin\Ip::isPrivate('8.8.8.8')   );
-        $this->assertEquals( false, Ydin\Ip::isPrivate('')          );
-        $this->assertEquals( false, Ydin\Ip::isPrivate(null)        );
-        $this->assertEquals( false, Ydin\Ip::isPrivate(false)       );
+        $this->assertEquals( false, Ydin\Net\Ip::isPrivate('8.8.8.8')   );
+        $this->assertEquals( false, Ydin\Net\Ip::isPrivate('')          );
+        $this->assertEquals( false, Ydin\Net\Ip::isPrivate(null)        );
+        $this->assertEquals( false, Ydin\Net\Ip::isPrivate(false)       );
     }
 
     /**
@@ -23,7 +23,7 @@ class IpTest extends PHPUnit_Framework_TestCase
      */
     public function test_ip2ong($value, $reault)
     {
-        $this->assertEquals( Ydin\Ip::ip2long($value), $reault);
+        $this->assertEquals( Ydin\Net\Ip::ip2long($value), $reault);
     }
     /**
      *
