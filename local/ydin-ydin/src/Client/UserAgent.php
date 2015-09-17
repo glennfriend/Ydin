@@ -1,58 +1,43 @@
 <?php
+
+namespace Ydin\Client;
+
 /**
  *  Client UserAgent information
  *
- *  @version     1.0.0.0
- *  @category    Ydin
- *  @package     Ydin\Client\UserAgent
+ *  @version    1.1.0
+ *  @category   Ydin
+ *  @package    Ydin\Client\UserAgent
+ *  @composer   https://packagist.org/packages/crossjoin/browscap
  *  @uses
  */
-namespace Ydin\Client;
-
 class UserAgent
 {
 
-    protected static $_store = null;
+    private static $browscap;
 
     /**
-     *  set user agent
-     */
-    public static function init( $userAgent )
-    {
-        self::$_store = trim($userAgent);
-    }
-
-    /**
-     *  get all browser info
+     *  get browser info
      *  @return array
      */
-    public static function getAll()
+    public static function get()
     {
-        if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-            $path = "C:\\Windows\\Temp\\";
-        } else {
-            $path = "/tmp/";
+        if ( !self::$browscap ) {
+            self::$browscap = new \Crossjoin\Browscap\Browscap();
         }
-
-        include_once 'Browscap.php';
-        $bc = new \phpbrowscap\Browscap($path);
-        if ( !self::$_store ) {
-            return (array) $bc->getBrowser();
-        }
-        return (array) $bc->getBrowser( self::$_store );
+        return (array) self::$browscap->getBrowser()->getData();
     }
 
     /**
-     *  get browser
-     *  @return string or null
+     *  get browser info by User Agent
+     *  @return array
      */
-    public static function getBrowser()
+    public static function getByAgent($userAgent)
     {
-        $info = self::getAll();
-        if ( isset($info['Browser']) ) {
-            return $info['Browser'];
+        if ( !self::$browscap ) {
+            self::$browscap = new \Crossjoin\Browscap\Browscap();
         }
-        return null;
+        return (array) self::$browscap->getBrowser($userAgent)->getData();
     }
 
 }

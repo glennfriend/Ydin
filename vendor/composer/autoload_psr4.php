@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Ydin\\' => array($vendorDir . '/ydin/ydin/src'),
+    'Crossjoin\\Browscap\\' => array($vendorDir . '/crossjoin/browscap/src/Crossjoin/Browscap'),
 );
