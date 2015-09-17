@@ -2,8 +2,9 @@
 /**
  *  Ip
  *
- *  @category    Ydin
- *  @package     Ydin\Ip
+ *  @version    1.0.1
+ *  @category   Ydin
+ *  @package    Ydin\Ip
  *  @uses
  */
 namespace Ydin;
@@ -39,7 +40,6 @@ class Ip
         return false;
     }
 
-
     /**
      *  IP string to integer
      *  not used ip2long
@@ -47,21 +47,12 @@ class Ip
      *  example:
      *      "192.168.0.1"
      *  
-     *  @return float 
+     *  @see http://php.net/manual/en/function.ip2long.php
+     *  @return IPv4 address or "0"
      */
-    public function ipToLong( $ipString )
+    public static function ip2long($ipString)
     {
-        $ip = explode('.', $ipString );
-
-        if( !$ip ||
-            !isset($ip[0]) ||
-            !isset($ip[1]) ||
-            !isset($ip[2]) ||
-            !isset($ip[3])
-        ) {
-            return 0;
-        }
-        return (($ip[0] * 256 + $ip[1]) * 256 + $ip[2]) * 256 + $ip[3];
+        return sprintf("%u", ip2long($ipString));
     }
 
 }

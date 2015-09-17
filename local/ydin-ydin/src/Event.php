@@ -1,6 +1,7 @@
 <?php
 /**
  *  Event
+ *
  *  為了讓系統架構更容易 插入 非主要功能的程式碼
  *  使用該方式來於處理副程式
  *
@@ -8,13 +9,12 @@
  *
  *  is static class
  *
- *  @version    1.0.0.1
+ *  @version    1.0.1
  *  @category   Ydin
  *  @package    Ydin\Event
- *  @uses
  *
- *  @history    1.0.0.0
- *  @history    1.0.0.1 - fix notify(), from include() to include_once()
+ *  @history    1.0.0
+ *  @history    1.0.1 - fix notify(), from include() to include_once()
  *
  */
 namespace Ydin;
