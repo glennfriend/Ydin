@@ -16,6 +16,8 @@ class array
 {
 
     // 未測試, 未使用
+    // 可以改成產生 instance, 直接輸出 $arrayDot('vivian.age', $defaultValue=0 );
+    
     /**
      *  使用 . 符號的方式將陣列由字串的方式來 取得
      *
