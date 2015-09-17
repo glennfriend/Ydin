@@ -17,6 +17,6 @@
     if (true) {
         echo 'Hello, your IP is ' . Ydin\Client\User::getIp();
         echo '</pre>';
-        exit;        
+        exit;
     }
 

@@ -1,29 +1,29 @@
 <?php
 /**
- * Date
+ * Day
  *
- * @version     1.0.0.0
+ * @version     1.0.0
  * @category    Ydin
  * @package     Ydin\Date
  * @uses
  */
-namespace Ydin;
+namespace Ydin\Date;
 
-class Date
+class Day
 {
 
     /**
-     * ¿é¤Jªº¤é´Á, ¸ò²{¦b¦øªA¾¹ªº®É¶¡¬Û¤ñ¸û, ¬O§_¦b¿é¤Jªº ¤Ñ¼Æ ¤§¤º
+     * è¼¸å…¥çš„æ—¥æœŸ, è·Ÿç¾åœ¨ä¼ºæœå™¨çš„æ™‚é–“ç›¸æ¯”è¼ƒ, æ˜¯å¦åœ¨è¼¸å…¥çš„ å¤©æ•¸ ä¹‹å…§
      *
      * @param int $time
      * @param int $day
      * @return boolean
      */
-    public static function inDay( $time, $day )
+    public static function inToday( $time, $day )
     {
         $diff = time() - ((int) $time);
         if ( $diff < 0 ) {
-            // ªí¥Ü¥¼¨Óªº¤é´Á
+            // è¡¨ç¤ºæœªä¾†çš„æ—¥æœŸ
             return true;
         }
 
