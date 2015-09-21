@@ -5,6 +5,7 @@ namespace Ydin\ArrayKit;
 /**
  *  DataConverge
  *
+ *  @version     1.0.0
  *  @category    Ydin
  *  @package     Ydin\ArrayKit
  *  @uses

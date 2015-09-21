@@ -1,32 +1,29 @@
 <?php
 
-// 未測試, 未使用
-exit;
+namespace Ydin\Url;
 
 /**
  *  Url Convert
  *
+ *  @version     1.0.0
  *  @category    Ydin
  *  @package     Ydin\Url\Convert
- *  @uses
  */
-namespace Ydin\Url;
-
 class Convert
 {
 
     /**
-     *  mailto
+     *  text to HTML mailto
      */
-    function mailto( $text )
+    public static function mailto($text)
     {
-        return ereg_replace("[_\.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+\.)+[a-zA-Z]{2,3}","<a href=\"mailto:\\0\">\\0</a>", $text );
+        return preg_replace('/(([a-z0-9+_-]+)(.[a-z0-9+_-]+)*@([a-z0-9-]+.)+[a-z]{2,6})/', '<a href="mailto:$1">$1</a>', $text);
     }
 
     /**
-     *  link
+     *  text to HTML link
      */
-    function link( $text )
+    public static function link($text)
     {
         $regex = '@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@';
         return preg_replace( $regex, '<a href="$1" target="_blank">$1</a>', $text );

@@ -1,13 +1,15 @@
 <?php
+
+namespace Ydin\Html;
+
 /**
  *  Html Convert
  *
+ *  @version     1.0.0
  *  @category    Ydin
  *  @package     Ydin\Html\Convert
  *  @uses
  */
-namespace Ydin\Html;
-
 class Convert
 {
     /**
@@ -15,24 +17,32 @@ class Convert
      *  將已經被編碼過的 unicode 解碼為正常文字碼
      *  
      *  使用時機:
-     *      一段被編碼過的內容, 如果要搜尋, 將是不可能的~
-     *      所以如果內容想要被搜尋到, 請解碼後存在某個 "專門用於搜尋的欄位"
+     *      一段被編碼過的內容, 無法被搜尋
+     *      如果希望內容被搜尋, 請解碼後存在某個 "專門用於搜尋的欄位"
      *
      *  example:
      *      "&#36935; &#21040;" to "遇 到"
      *
-     *  @param html string
-     *  @return The decoded html string
+     *  @param unicode string
+     *  @return text string
      */
-    function entitiesDecode( $html )
+    public static function unicode2Text($unicode)
     {
         return preg_replace_callback(
             '~(&#[0-9a-f]+;)~i',
             function ($matches) {
                 return mb_convert_encoding($matches[0], 'UTF-8', 'HTML-ENTITIES');
             },
-            $html
+            $unicode
         );
+    }
+
+    /**
+     *  將文字轉為 unicode
+     */
+    public static function text2Unicode($text)
+    {
+        return mb_convert_encoding($text, 'HTML-ENTITIES', 'UTF-8');
     }
 
 }
