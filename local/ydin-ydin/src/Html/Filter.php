@@ -1,4 +1,7 @@
 <?php
+
+namespace Ydin\Html;
+
 /**
  *  Html Filter
  *
@@ -6,13 +9,12 @@
  *  @package     Ydin\Html\Filter
  *  @uses
  */
-namespace Ydin\Html;
-
 class Filter
 {
 
     /**
      *  filter html tags
+     *
      *  只去除 html tags, 但是不會清掉裡面的內容
      */
     public static function htmlTags( $html )
