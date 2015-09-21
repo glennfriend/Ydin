@@ -1,6 +1,6 @@
 <?php
 
-class IpTest extends PHPUnit_Framework_TestCase
+class Net_IpTest extends PHPUnit_Framework_TestCase
 {
     /**
      *  

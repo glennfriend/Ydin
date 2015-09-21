@@ -1,6 +1,6 @@
 <?php
 
-class MimeTest extends PHPUnit_Framework_TestCase
+class File_MimeTest extends PHPUnit_Framework_TestCase
 {
     /**
      *  

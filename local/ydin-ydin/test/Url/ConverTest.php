@@ -1,6 +1,6 @@
 <?php
 
-class ConverTest extends PHPUnit_Framework_TestCase
+class Url_ConverTest extends PHPUnit_Framework_TestCase
 {
 
     /**

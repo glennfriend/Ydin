@@ -1,6 +1,6 @@
 <?php
 
-class DotTest extends PHPUnit_Framework_TestCase
+class ArrayKit_DotTest extends PHPUnit_Framework_TestCase
 {
     protected $items = [
         'name'      => 'ken',

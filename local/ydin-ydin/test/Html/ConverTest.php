@@ -1,6 +1,6 @@
 <?php
 
-class HtmlConverTest extends PHPUnit_Framework_TestCase
+class Html_ConverTest extends PHPUnit_Framework_TestCase
 {
 
     /**
