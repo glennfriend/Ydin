@@ -7,14 +7,17 @@ exit;
  *  Array index
  *
  *  @category    Ydin
- *  @package     Ydin\Array\Index
+ *  @package     Ydin\ArrayKit\Index
  *  @uses
  */
-namespace Ydin\Array;
+namespace Ydin\ArrayKit;
 
 /*
-    代入一個 已經處理好資訊的 二維陣列 index => key, values 
+    代入一個 已經處理好資訊的 二維陣列 index => key, values
     來搜尋、比對裡面的內容
+
+    一維為 index
+    二維為 hash values
 
     example
         Array(
@@ -34,32 +37,30 @@ namespace Ydin\Array;
 
     $idx = new Ydin_Array_Index($arr);
 
-    // 完全匹配
-    $idx->has('name','kevin');          // true
+    // 第一個匹配的值
+    list($key, $value) = $idx->get('name == kevin');
 
     // 進階匹配
-    $idx->has('name', 'evi', '%');      // true ( find "kevin" ) <-- 糢糊匹配
-    $idx->has('age', 30, '>=');
-    $idx->has('age', 10, '<');
-    $idx->has('name', 'kevin', '===');
-    $idx->has('name', 'kevin', 'i');    // 不論大小寫的匹配
+    // parse -> 第二個空白之後皆視為 value 處理
+    $idx->get('name % via');            // true ( find "kevin" ) <-- 糢糊匹配
+    $idx->get('age >= 30');
+    $idx->get('age < 10');
+    $idx->get('name === kevin');
+    $idx->get('name == kevin', '/i');   // 不論大小寫的匹配
 
     // 取得 完全匹配多筆
-    $idx->find('age',18);               // 取得 多個資料陣列????? or 多個索引陣列?????
+    $idx->find('age == 18', null, $callback);
 
     // 取得 糢糊匹配多筆
-    $idx->find('name','k','%');
+    $idx->find('name % k' , function() {
+        echo $key.' '.$value,
+    });
 
-    // 取得資料 by index
-    $idx->get(3)
-
-        Array(
-            [name] => kevin
-            [age]  => 15
-        );
+    // 相關方法
+    $idx->getByIndex(3);        // [name=>kevin, age=15]  -> 真有需要該功能??
 
     // php 5.4 可使用
-    $idx->get(3)['age']                 // 15
+    $idx->get(3)[1]['age']      // 15
 
 */
 class Index
@@ -67,14 +68,28 @@ class Index
     /**
      *
      */
-    public function __construct( Array $arr )
+    public function factory(Array $data)
     {
-        $this->data = $arr;
+        return new IndexInstance($data);
     }
 
 }
 
 
+
+class IndexInstance
+{
+    var $data = null;
+
+    /**
+     *
+     */
+    public function __construct(Array $data)
+    {
+        $this->data = $data;
+    }
+
+}
 
 /*
 

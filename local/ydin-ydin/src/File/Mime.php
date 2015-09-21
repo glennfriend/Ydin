@@ -3,7 +3,7 @@
 /**
  *  File Mime
  *
- *  @version     1.0.0.0
+ *  @version     1.0.0
  *  @category    Ydin
  *  @package     Ydin\File\Mime
  *  @uses
@@ -16,7 +16,7 @@ class Mime
     /**
      *  get mime by file
      */
-    public static function getByFile( $file )
+    public static function getByFile($file)
     {
         return finfo_file(
             finfo_open(FILEINFO_MIME_TYPE), $file
@@ -26,13 +26,13 @@ class Mime
 
     /**
      *  代入 mime 找 extend name
+     *
      *  @param string mime
      *  @return string or null
      */
-    public static function getExtendByMime( $mime )
+    public static function getExtendByMime($mime)
     {
-        $group = self::getGroup();
-        foreach ( $group as $name => $extends ) {
+        foreach ( self::getExtendGroup() as $name => $extends ) {
             if ( in_array( $mime, $extends ) ) {
                 return $name;
             }
@@ -41,11 +41,13 @@ class Mime
     }
 
     /**
-     *  常用格式分類
+     *  取得 所有對應的 副檔名 & mime
+     *
+     *  @return all mime group
      */
-    public static function getGroup( $group=null )
+    public static function getExtendGroup()
     {
-        $list = array(
+        return array(
             'csv' => array(
                 'text/csv',
                 'text/comma-separated-values',
@@ -77,12 +79,26 @@ class Mime
             'psd' => array(
                 'image/vnd.adobe.photoshop',
             ),
-        );
 
-        if ( $group && isset($list[$gruop]) ) {
-            return $list[$gruop];
+            'php' => array(
+                'text/x-php',
+            ),
+        );
+    }
+
+    /**
+     *  常用格式分類
+     *
+     *  @param $category
+     *  @return mimes array or empty array
+     */
+    public static function getByExtendName($name)
+    {
+        $group = self::getExtendGroup();
+        if ( !isset($group[$name]) ) {
+            return array();
         }
-        return $list;
+        return $group[$name];
     }
 
     
