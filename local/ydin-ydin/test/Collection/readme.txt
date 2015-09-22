@@ -33,6 +33,21 @@
     $collection->sort('name ASC, age DESC');
         多欄位排序
 
+    各種的匹配
+        >
+        >=
+        <
+        <=
+        ==
+        !==
+        ===
+        !==
+        %
+        in
+
+    補助匹配
+        /i      不分大小寫
+
     $collection->get('name == kevin');
     $collection->get('name === kevin');
     $collection->get('name % via');
