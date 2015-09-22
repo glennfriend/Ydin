@@ -36,7 +36,12 @@ class User
                 }
             }
         }
-        return $_SERVER['REMOTE_ADDR'];
+
+        if (isset($_SERVER['REMOTE_ADDR'])) {
+            return $_SERVER['REMOTE_ADDR'];
+        }
+
+        return null;
     }
 
 }
