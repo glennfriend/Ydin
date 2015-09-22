@@ -1,11 +1,11 @@
 
-    Ydin\Client::getIp()
-        ¨ú±o ¨Ï¥ÎªÌ IP
+    Ydin\Client\User::getIp();
+        å–å¾— ä½¿ç”¨è€… IP
 
     Ydin\Client\UserAgent::get()
-        ¨ú±o¨Ï¥ÎªÌ UserAgent, ¨Ã¥B¸ÑªR
+        å–å¾—ä½¿ç”¨è€… UserAgent, ä¸¦ä¸”è§£æ
 
     $userAgent = 'Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405'
     Ydin\Client\UserAgent::getByAgent($userAgent);
-        ¸ÑªR UserAgent
+        è§£æ UserAgent
 
