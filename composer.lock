@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "379abc696e7e4e7e43e7edf17a551063",
-    "content-hash": "e8820399e05f86719b6782dcb5d23542",
+    "hash": "ef36892aabc739246e75ac75dc1a1e84",
+    "content-hash": "bf8536c2d060e97c35503f8e52e74a2c",
     "packages": [
         {
             "name": "crossjoin/browscap",
