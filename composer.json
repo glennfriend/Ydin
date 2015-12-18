@@ -1,6 +1,5 @@
 {
-    "version":  "1.0.0",
-    "name":     "ydin",
+    "name": "ydin",
     "repositories": [
         {
             "type": "path",
