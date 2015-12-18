@@ -8,5 +8,10 @@
     ],
     "require" : {
         "ydin/ydin": "*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0"
+        }
     }
 }
