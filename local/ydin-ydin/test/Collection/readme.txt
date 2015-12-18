@@ -14,16 +14,16 @@
         ],
     ];
 
-     $collection->insert($items[0]);
-        新增一組陣列
+    $collection->insert($items[0]);
+        新增一組陣列 (無視索引值)
 
-     $collection->insertMany($items);
-        新增多組陣列, 索引值會失去
+    $collection->insertMany($items);
+        新增多組陣列 (無視索引值)
 
     $collection->filter('name', 'strtolower,trim,toInt,toString');
         將陣列中所有 name 欄位的值做以下的變更
-            strtolower
-            trim
+            strtolower()
+            trim()
             convert to int
             convert to string
 
