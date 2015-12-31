@@ -1,7 +1,7 @@
-**test command line auto**
+**Unit Test**
 ```sh
-    phpunit
-    phpunit --configuration phpunit.report.xml
+phpunit
+phpunit --configuration phpunit.report.xml
 ```
 
 **使用方式**
