@@ -4,7 +4,7 @@
     phpunit --configuration phpunit.report.xml
 ```
 
-**�ϥΤ覡**
+**使用方式**
 ```
 {
     "require" : {
