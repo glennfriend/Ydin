@@ -1,3 +1,6 @@
+**Install**
+- [x] [xdebug](http://xdebug.org/) - (phpbrew ext install xdebug)
+
 **Unit Test**
 ```sh
 phpunit
