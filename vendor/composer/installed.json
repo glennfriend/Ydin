@@ -47,28 +47,5 @@
             "get_browser",
             "user agent"
         ]
-    },
-    {
-        "name": "ydin/ydin",
-        "version": "1.0.0",
-        "version_normalized": "1.0.0.0",
-        "dist": {
-            "type": "path",
-            "url": "./local/ydin-ydin",
-            "reference": "",
-            "shasum": null
-        },
-        "require": {
-            "crossjoin/browscap": "1.0.*",
-            "php": ">=5.5"
-        },
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Ydin\\": "src/"
-            }
-        },
-        "description": "ydin library"
     }
 ]

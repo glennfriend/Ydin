@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Ydin\\' => array($vendorDir . '/ydin/ydin/src'),
+    'Ydin\\' => array($baseDir . '/src'),
     'Crossjoin\\Browscap\\' => array($vendorDir . '/crossjoin/browscap/src/Crossjoin/Browscap'),
 );

@@ -1,11 +1,13 @@
 {
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./local/ydin-ydin"
-        }
-    ],
+    "name": "ydin/ydin",
     "require" : {
-        "ydin/ydin": "*"
-    }
+        "php": ">=5.5",
+        "crossjoin/browscap": "1.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ydin\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
 }

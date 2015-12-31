@@ -13,23 +13,6 @@
     // composer autoload
     require_once(__DIR__.'/vendor/autoload.php');
 
-    echo <<<'EOD'
-        <!DOCTYPE html>
-        <html>
-            <head>
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-            </head>
-            <body>
-                <pre>
-EOD;
-
-    if (true) {
-        echo 'Hello, your IP is ' . Ydin\Client\User::getIp();
-        echo "\n";
-
-
-
-        echo '</pre>';
-        exit;
-    }
-
+    echo 'Your IP is ';
+    var_dump(Ydin\Client\User::getIp());
+    echo "\n";
