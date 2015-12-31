@@ -7,7 +7,7 @@ phpunit
 phpunit --configuration phpunit.report.xml
 ```
 
-**使用方式**
+**for Composer**
 ```
 {
     "require" : {
