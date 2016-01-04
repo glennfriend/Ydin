@@ -14,5 +14,5 @@
     require_once(__DIR__.'/vendor/autoload.php');
 
     echo 'Your IP is ';
-    var_dump(Ydin\Client\User::getIp());
+    echo var_export(Ydin\Client\User::getIp());
     echo "\n";
