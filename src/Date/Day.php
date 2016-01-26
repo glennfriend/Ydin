@@ -4,7 +4,7 @@
  *
  * @version     1.0.0
  * @category    Ydin
- * @package     Ydin\Date
+ * @package     Ydin\Date\Day
  * @uses
  */
 namespace Ydin\Date;
