@@ -3,7 +3,7 @@
 class Client_UserAgentTest extends PHPUnit_Framework_TestCase
 {
     /**
-     *  
+     *
      */
     public function test_get()
     {
@@ -25,7 +25,7 @@ class Client_UserAgentTest extends PHPUnit_Framework_TestCase
         $this->assertEquals( 'Chrome 45.0', $info['parent']         );
         $this->assertEquals( 'Win7',        $info['platform']       );
         $this->assertEquals( "Desktop",     $info['device_type']    );
-        $this->assertEquals( "false",       $info['ismobiledevice'] );
+        $this->assertEquals( "",            $info['ismobiledevice'] );
     }
 
 }

@@ -14,18 +14,13 @@ namespace Ydin\Client;
 class UserAgent
 {
 
-    private static $browscap;
-
     /**
      *  get browser info
      *  @return array
      */
     public static function get()
     {
-        if ( !self::$browscap ) {
-            self::$browscap = new \Crossjoin\Browscap\Browscap();
-        }
-        return (array) self::$browscap->getBrowser()->getData();
+        return (array) self::getBrowscap()->getBrowser();
     }
 
     /**
@@ -34,10 +29,27 @@ class UserAgent
      */
     public static function getByAgent($userAgent)
     {
-        if ( !self::$browscap ) {
-            self::$browscap = new \Crossjoin\Browscap\Browscap();
+        return (array) self::getBrowscap()->getBrowser($userAgent);
+    }
+
+    // --------------------------------------------------------------------------------
+    // private
+    // --------------------------------------------------------------------------------
+
+    /**
+     *
+     */
+    private static function getBrowscap()
+    {
+        static $browscap;
+        if (!$browscap) {
+            $browscap = new \Crossjoin\Browscap\Browscap();
+            //$browscap->setAutoUpdateProbability(1);
+            //$arrayFormatter = new \Crossjoin\Browscap\Formatter\PhpGetBrowser(true);
+            //$browscap->setFormatter($arrayFormatter);
         }
-        return (array) self::$browscap->getBrowser($userAgent)->getData();
+
+        return $browscap;
     }
 
 }
