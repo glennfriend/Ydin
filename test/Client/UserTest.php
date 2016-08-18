@@ -8,7 +8,7 @@ class Client_UserTest extends PHPUnit_Framework_TestCase
     public function test_getIp()
     {
         $ip = Ydin\Client\User::getIp();
-        $this->assertEquals( true, null === $ip );
+        $this->assertEquals(true, null === $ip);
     }
 
 }
