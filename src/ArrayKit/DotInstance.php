@@ -6,6 +6,10 @@ namespace Ydin\ArrayKit;
  * 使用 . 符號的方式, 將陣列由字串的方式來 取得
  * Data Converge
  *
+ * @version     1.0.0
+ * @category    Ydin
+ * @package     Ydin\ArrayKit
+ *
  * example
  *
  *      // data

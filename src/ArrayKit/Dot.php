@@ -12,9 +12,6 @@ namespace Ydin\ArrayKit;
 class Dot
 {
 
-    // 未測試, 未使用
-    // 可以改成產生 instance, 直接輸出 $arrayDot('vivian.age', $defaultValue=0 );
-
     /**
      * 產生 instance
      * 包裝後可以直接以 function 方式使用
