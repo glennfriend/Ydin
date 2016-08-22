@@ -67,12 +67,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/console.git",
-            "reference": "f82f4744a58cf6846decbdbe29d3d8a1e6bf5d6a"
+            "reference": "b5044f6c999c0555fd2e7c889e8dc3f0246876de"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/console/zipball/f82f4744a58cf6846decbdbe29d3d8a1e6bf5d6a",
-            "reference": "f82f4744a58cf6846decbdbe29d3d8a1e6bf5d6a",
+            "url": "https://api.github.com/repos/symfony/console/zipball/b5044f6c999c0555fd2e7c889e8dc3f0246876de",
+            "reference": "b5044f6c999c0555fd2e7c889e8dc3f0246876de",
             "shasum": ""
         },
         "require": {
@@ -91,7 +91,7 @@
             "symfony/filesystem": "",
             "symfony/process": ""
         },
-        "time": "2016-08-10 07:06:11",
+        "time": "2016-08-19 06:48:55",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -328,7 +328,7 @@
                 "dev-master": "6.2-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "files": [
                 "src/functions_include.php"
