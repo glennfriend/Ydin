@@ -3,7 +3,7 @@
     "type": "library",
     "description": "generic library",
     "require" : {
-        "php": "^5.6",
+        "php": ">=5.6",
         "crossjoin/browscap": "2.0.4"
     },
     "autoload": {
