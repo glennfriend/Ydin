@@ -1,6 +1,8 @@
 <?php
 
-class Url_ValidateTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class Url_ValidateTest extends TestCase
 {
 
     /**

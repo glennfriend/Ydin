@@ -1,6 +1,8 @@
 <?php
 
-class Collection_CollectionTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class Collection_CollectionTest extends TestCase
 {
     public function setUp()
     {

@@ -1,6 +1,8 @@
 <?php
 
-class Client_UserAgentTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+final class Client_UserAgentTest extends TestCase
 {
     /**
      *

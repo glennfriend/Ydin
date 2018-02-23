@@ -1,6 +1,8 @@
 <?php
 
-class Date_DayTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class Date_DayTest extends TestCase
 {
     /**
      *  
