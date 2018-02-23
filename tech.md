@@ -11,7 +11,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "./local/ydin-ydin"
+            "url": "packages/Ydin/src"
         }
     ],
 }
