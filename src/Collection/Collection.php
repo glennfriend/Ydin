@@ -1,18 +1,16 @@
 <?php
-
 namespace Ydin\Collection;
 
 /**
- *  將陣列資料打包為 Collection Object
- *  以方便處理資料, 功能有
- *      - filter
- *      - sort
- *      - get
- *      - find
+ * 將陣列資料打包為 Collection Object
+ * 以方便處理資料, 功能有
+ *     - filter
+ *     - sort
+ *     - get
+ *     - find
  *
- *  @version     1.0.0
- *  @category    Ydin
- *  @package     Ydin\Collection
+ * @version 1.0.0
+ * @package Ydin\Collection
  */
 class Collection
 {

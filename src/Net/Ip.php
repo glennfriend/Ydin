@@ -1,14 +1,12 @@
 <?php
-/**
- *  Ip
- *
- *  @version    1.0.1
- *  @category   Ydin
- *  @package    Ydin\Net
- *  @uses
- */
 namespace Ydin\Net;
 
+/**
+ * Ip
+ *
+ * @version 1.0.1
+ * @package Ydin\Net
+ */
 class Ip
 {
 

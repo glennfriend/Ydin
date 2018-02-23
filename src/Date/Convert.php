@@ -1,14 +1,12 @@
 <?php
+namespace Ydin\Date;
+
 /**
  * Convert
  *
- * @version     1.0.0
- * @category    Ydin
- * @package     Ydin\Date\Convert
- * @uses
+ * @version 1.0.0
+ * @package Ydin\Date\Convert
  */
-namespace Ydin\Date;
-
 class Convert
 {
 

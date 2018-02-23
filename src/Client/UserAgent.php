@@ -1,15 +1,12 @@
 <?php
-
 namespace Ydin\Client;
 
 /**
- *  Client UserAgent information
+ * Client UserAgent information
  *
- *  @version    1.1.0
- *  @category   Ydin
- *  @package    Ydin\Client\UserAgent
- *  @composer   https://packagist.org/packages/crossjoin/browscap
- *  @uses
+ * @version    1.1.0
+ * @package    Ydin\Client\UserAgent
+ * @composer   https://packagist.org/packages/crossjoin/browscap
  */
 class UserAgent
 {

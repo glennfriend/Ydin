@@ -1,24 +1,22 @@
 <?php
-/**
- *  Event
- *
- *  為了讓系統架構更容易 插入 非主要功能的程式碼
- *  使用該方式來於處理副程式
- *
- *  注意: 不適當的使用, 會使系統變慢
- *
- *  is static class
- *
- *  @version    1.0.1
- *  @category   Ydin
- *  @package    Ydin\Event
- *
- *  @history    1.0.0
- *  @history    1.0.1 - fix notify(), from include() to include_once()
- *
- */
 namespace Ydin;
 
+/**
+ * Event
+ *
+ *      為了讓系統架構更容易 插入 非主要功能的程式碼
+ *      使用該方式來於處理副程式
+ *
+ *      注意: 不適當的使用, 會使系統變慢
+ *
+ *      is static class
+ *
+ * @version    1.0.1
+ * @package    Ydin\Event
+ *
+ * @history    1.0.0
+ * @history    1.0.1 - fix notify(), from include() to include_once()
+ */
 class Event
 {
 

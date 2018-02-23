@@ -1,13 +1,11 @@
 <?php
-
 namespace Ydin\Html;
 
 /**
- *  Html Filter
+ * Html Filter
  *
- *  @category    Ydin
- *  @package     Ydin\Html\Filter
- *  @uses
+ * @version 0.1.0
+ * @package Ydin\Html\Filter
  */
 class Filter
 {

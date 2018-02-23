@@ -1,14 +1,12 @@
 <?php
+namespace Ydin\Url;
 
 /**
  * Url Vlidate
  *
- * @category    Ydin
- * @package     Ydin\Url\Validate
- * @uses
+ * @version 0.1.0
+ * @package Ydin\Url\Validate
  */
-namespace Ydin\Url;
-
 class Validate
 {
 

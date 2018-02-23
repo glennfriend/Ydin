@@ -1,13 +1,11 @@
 <?php
-
 namespace Ydin\Url;
 
 /**
- *  Url Convert
+ * Url Convert
  *
- *  @version     1.0.0
- *  @category    Ydin
- *  @package     Ydin\Url\Convert
+ * @version 1.0.0
+ * @package Ydin\Url\Convert
  */
 class Convert
 {

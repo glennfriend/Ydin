@@ -2,9 +2,8 @@
 /**
  * Day
  *
- * @version     1.0.0
- * @category    Ydin
- * @package     Ydin\Date\Day
+ * @version 1.0.0
+ * @package Ydin\Date\Day
  * @uses
  */
 namespace Ydin\Date;

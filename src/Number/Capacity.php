@@ -3,15 +3,14 @@
 // 未進行 正確標準 測試
 exit;
 
-/**
- *  容量
- *
- *  @category    Ydin
- *  @package     Ydin\Number\Capacity
- *  @uses
- */
 namespace Ydin\Number;
 
+/**
+ * 容量
+ *
+ * @version 0.1.0
+ * @package Ydin\Number\Capacity
+ */
 class Capacity
 {
 

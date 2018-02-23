@@ -3,16 +3,14 @@
 // 未測試
 exit;
 
-/**
- *  取得 url 的資料
- *
- *  @version     1.0.0.0
- *  @category    Ydin
- *  @package     Ydin\File\Url
- *  @uses
- */
 namespace Ydin\File;
 
+/**
+ * 取得 url 的資料
+ *
+ * @version 0.1.0
+ * @package Ydin\File
+ */
 class Url
 {
 

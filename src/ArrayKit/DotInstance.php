@@ -6,10 +6,6 @@ namespace Ydin\ArrayKit;
  * 使用 . 符號的方式, 將陣列由字串的方式來 取得
  * Data Converge
  *
- * @version     1.0.0
- * @category    Ydin
- * @package     Ydin\ArrayKit
- *
  * example
  *
  *      // data
@@ -24,6 +20,9 @@ namespace Ydin\ArrayKit;
  *
  *      // 索引值如果是數值, 也可以直接使用
  *      $dotInstance->get('user.friend.0.name', null);
+ *
+ * @version 1.0.0
+ * @package Ydin\ArrayKit
  *
  */
 class DotInstance

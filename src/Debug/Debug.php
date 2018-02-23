@@ -1,13 +1,12 @@
 <?php
+namespace Ydin;
+
 /**
  * Debug library
  *
- * @category    Ydin
- * @package     Ydin\Debug
- * @uses
+ * @version 0.1.0
+ * @package Ydin\Debug
  */
-namespace Ydin;
-
 class Debug
 {
 

@@ -1,15 +1,12 @@
 <?php
-
-/**
- *  File Mime
- *
- *  @version     1.0.0
- *  @category    Ydin
- *  @package     Ydin\File\Mime
- *  @uses
- */
 namespace Ydin\File;
 
+/**
+ * File Mime
+ *
+ * @version     1.0.0
+ * @package     Ydin\File\Mime
+ */
 class Mime
 {
 

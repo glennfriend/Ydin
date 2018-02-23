@@ -1,13 +1,12 @@
 <?php
-/**
- *  Client information
- *
- *  @category    Ydin
- *  @package     Ydin\Client
- *  @uses
- */
 namespace Ydin\Client;
 
+/**
+ * Client information
+ *
+ * @version 0.1.0
+ * @package Ydin\Client
+ */
 class User
 {
 

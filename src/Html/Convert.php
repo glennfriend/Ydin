@@ -1,14 +1,11 @@
 <?php
-
 namespace Ydin\Html;
 
 /**
- *  Html Convert
+ * Html Convert
  *
- *  @version     1.0.0
- *  @category    Ydin
- *  @package     Ydin\Html\Convert
- *  @uses
+ * @version     1.0.0
+ * @package     Ydin\Html\Convert
  */
 class Convert
 {
